@@ -1,0 +1,61 @@
+.ribbon {
+  width: 100%;
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* TEXTO */
+
+.ribbon p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: #e8cfa0;
+}
+
+
+/* VARIANTES DE COLOR */
+
+.ribbon-vino {
+  background: linear-gradient(
+    to right,
+    #6d203d,
+    #8f2d52,
+    #6d203d
+  );
+}
+
+.ribbon-dorado {
+  background: linear-gradient(
+    to right,
+    #c9a75c,
+    #e2c27c,
+    #c9a75c
+  );
+
+  color: #5a3a15;
+}
+
+.ribbon-negro {
+  background: linear-gradient(
+    to right,
+    #111,
+    #2b2b2b,
+    #111
+  );
+}   
+
+.ribbon-rosa {
+  background: linear-gradient(
+    to right,
+      #c98fa1,
+  #E1BBC6,
+  #f3d7df
+  );
+  color: #111 !important;
+} 
+
+.ribbon-rosa p{
+  color: #111 !important;
+}

@@ -1,0 +1,204 @@
+.padrinos {
+
+  background: #ffffff;
+  padding: 110px 20px;
+  text-align: center;
+
+}
+
+
+/* TITULO */
+
+.padrinos-title {
+
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+
+  color: #7a2946;
+
+  margin-bottom: 60px;
+
+}
+
+
+/* GRID */
+
+.padrinos-grid {
+
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+
+}
+
+
+/* TARJETAS */
+
+.padrino-card {
+
+  background: #f7f2ec;
+
+  padding: 40px 25px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.08);
+
+  transition:
+    transform .45s ease,
+    box-shadow .45s ease;
+
+  position: relative;
+
+}
+
+.padrino-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 35px 70px rgba(0,0,0,0.18);
+
+}
+
+
+/* TITULO CARD */
+
+.padrino-card h3 {
+
+  font-family: 'Cinzel', serif;
+
+  margin-bottom: 10px;
+
+  color: #7a2946;
+
+  letter-spacing: .5px;
+
+}
+
+
+/* NOMBRES */
+
+.padrino-card p {
+
+  font-family: 'Lato', sans-serif;
+
+  font-size: 1.1rem;
+
+}
+
+
+/* ICONO */
+
+.icon{
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  height:60px;
+
+  margin-bottom:14px;
+
+}
+
+
+/* IMAGEN ICONO */
+
+.icon img{
+
+  width: 5rem;
+
+  transition:
+    transform .35s ease,
+    filter .35s ease;
+
+  animation: iconFloat 5s ease-in-out infinite;
+
+}
+
+
+/* HOVER ICONO */
+
+.padrino-card:hover .icon img{
+
+  transform: scale(1.18);
+
+  filter:
+    drop-shadow(0 0 6px rgba(201,167,92,0.45));
+
+}
+
+
+/* ANIMACION SUAVE DE ICONOS */
+
+@keyframes iconFloat {
+
+  0% { transform: translateY(0); }
+
+  50% { transform: translateY(-4px); }
+
+  100% { transform: translateY(0); }
+
+}
+
+
+/* ANIMACIONES DE ENTRADA */
+
+.reveal {
+
+  opacity: 0;
+  transform: translateY(40px);
+
+}
+
+.show .reveal {
+
+  animation: revealUp 1s ease forwards;
+
+}
+
+@keyframes revealUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* DELAYS ESCALONADOS */
+
+.delay1 { animation-delay: .2s }
+.delay2 { animation-delay: .4s }
+.delay3 { animation-delay: .6s }
+.delay4 { animation-delay: .8s }
+.delay5 { animation-delay: 1s }
+.delay6 { animation-delay: 1.2s }
+.delay7 { animation-delay: 1.4s }
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .padrinos-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+  }
+
+}

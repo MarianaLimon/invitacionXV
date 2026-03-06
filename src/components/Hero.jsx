@@ -74,41 +74,30 @@ export default function Hero() {
     >
 
       <div className="overlay"></div>
-
       <div className="hero-content">
-
         <h1 className="nombre">Fernanda Hernández</h1>
-
         <p className="misxv">Mis XV Años</p>
-
         <div className="fecha">
           25 · Agosto · 2026
         </div>
-
         <div className="divider"></div>
-
         <div className="countdown">
-
           <div>
             <span>{timeLeft.days}</span>
             <small>DÍAS</small>
           </div>
-
           <div>
             <span>{timeLeft.hours}</span>
             <small>HRS</small>
           </div>
-
           <div>
             <span>{timeLeft.minutes}</span>
             <small>MIN</small>
           </div>
-
           <div>
             <span>{timeLeft.seconds}</span>
             <small>SEG</small>
           </div>
-
         </div>
 
         <div className="calendar-btn-wrapper">

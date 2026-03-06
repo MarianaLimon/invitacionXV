@@ -1,6 +1,4 @@
-/* =========================
-   HERO BASE (NO ANIMADO)
-========================= */
+/* === HERO BASE (NO ANIMADO) === */
 .hero {
   position: relative;
   height: 100vh;
@@ -16,9 +14,7 @@
   color: white;
 }
 
-/* =========================
-   OVERLAY PRINCESA
-========================= */
+/* === OVERLAY PRINCESA === */
 .overlay {
   position: absolute;
   inset: 0;
@@ -28,9 +24,7 @@
   );
 }
 
-/* =========================
-   CONTENIDO
-========================= */
+/* ==== CONTENIDO === */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -38,9 +32,7 @@
   max-width: 900px;
 }
 
-/* =========================
-   ANIMACIÓN SECUENCIAL
-========================= */
+/* === ANIMACIÓN SECUENCIAL === */
 
 /* Estado inicial */
 .hero-content > * {
@@ -76,10 +68,7 @@
   transition-delay: 1.4s;
 }
 
-/* =========================
-   TIPOGRAFÍA
-========================= */
-
+/* === TIPOGRAFÍA === */
 .nombre {
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
@@ -108,10 +97,7 @@
   margin: 25px auto;
 }
 
-/* =========================
-   COUNTDOWN
-========================= */
-
+/* === COUNTDOWN === */
 .countdown {
   margin-top: 30px;
   display: flex;
@@ -130,10 +116,7 @@
   letter-spacing: 2px;
 }
 
-/* =========================
-   COUNTDOWN BOXES
-========================= */
-
+/* === COUNTDOWN BOXES === */
 .countdown > div {
   padding: 18px 22px;
   border: 1.5px solid rgba(255, 255, 255, 0.6);
@@ -151,10 +134,7 @@
   border-color: #ffffff;
 }
 
-/* =========================
-   BOTÓN CALENDARIO
-========================= */
-
+/* === BOTÓN CALENDARIO === */
 .calendar-btn-wrapper {
   margin-top: 40px;
 }
@@ -182,9 +162,7 @@
   transform: translateY(-3px);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* === MOBILE === */
 
 @media (max-width:768px){
 

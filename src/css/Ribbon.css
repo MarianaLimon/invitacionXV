@@ -6,7 +6,6 @@
 }
 
 /* TEXTO */
-
 .ribbon p {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
@@ -14,9 +13,7 @@
   color: #e8cfa0;
 }
 
-
 /* VARIANTES DE COLOR */
-
 .ribbon-vino {
   background: linear-gradient(
     to right,

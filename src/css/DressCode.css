@@ -1,142 +1,82 @@
 .dresscode{
-
   background: linear-gradient(
-    to right,
-      #c98fa1,
-  #E1BBC6,
-  #f3d7df
+    to bottom,
+    #f4efe9 0%,
+    #f1d9df 40%,
+    #e7b2bf 100%
   );
-
   padding:110px 20px;
-
   text-align:center;
-
 }
-
 
 /* TITULO */
-
 .dresscode-title{
-
   font-family:'Great Vibes', cursive;
-
   font-size:3rem;
-
   color:#494949;
-
   margin-bottom:70px;
-
 }
-
 
 /* GRID */
-
 .dresscode-grid{
-
   max-width:900px;
-
   margin:auto;
-
   display:grid;
-
   grid-template-columns:1fr 1fr;
-
   gap:60px;
-
 }
 
-
 /* TARJETAS */
-
 .dresscode-card{
-
   background:#f7f2ec;
-
   padding:50px 30px;
-
   border-radius:18px;
-
   box-shadow:0 25px 50px rgba(0,0,0,0.08);
-
   transition:all .4s ease;
-
 }
 
 .dresscode-card:hover{
-
   transform:translateY(-6px);
-
   box-shadow:0 35px 70px rgba(0,0,0,0.12);
-
 }
 
-
 /* TITULOS */
-
 .dresscode-card h3{
-
   font-family:'Cinzel', serif;
-
   font-size:1.5rem;
-
   color:#7a2946;
-
   margin-top:20px;
-
 }
 
 .dresscode-card p{
-
   margin-top:8px;
-
   font-family:'Lato', sans-serif;
-
   color:#444;
-
 }
 
 .dresscode-card img {
   width: 35%;
 }
 
-
 /* PALETA */
-
 .color-palette{
-
   margin-top:20px;
-
   display:flex;
-
   justify-content:center;
-
   gap:12px;
-
 }
 
 .color-palette span{
-
   width:26px;
-
   height:26px;
-
   border-radius:50%;
-
   box-shadow:0 4px 10px rgba(0,0,0,0.2);
-
 }
 
-
 /* MOBILE */
-
 @media(max-width:768px){
-
   .dresscode-grid{
-
     grid-template-columns:1fr;
-
     gap:40px;
-
   }
-
 }

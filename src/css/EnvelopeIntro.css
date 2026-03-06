@@ -112,7 +112,7 @@
   }  
 
   .open .flap {
-  transform: translateX(-50%) rotateX(-150deg);
-}
+    transform: translateX(-50%) rotateX(-150deg);
+  }
 
 }

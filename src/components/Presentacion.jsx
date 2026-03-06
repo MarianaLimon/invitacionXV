@@ -80,7 +80,6 @@ export default function Presentacion() {
 
 
         {/* TEXTO */}
-
         <div className="texto-presentacion">
 
           <h2 className="reveal delay2">

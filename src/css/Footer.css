@@ -1,0 +1,92 @@
+.footer{
+
+  background: linear-gradient(
+    to bottom,
+    #e7b2bf,
+    #d79aa8
+  );
+
+  text-align:center;
+  padding-top:120px;
+}
+
+/* CONTENIDO */
+
+.footer-contenido{
+  padding:0 20px 80px;
+}
+
+/* MENSAJE */
+
+.mensaje-final{
+  font-size:20px;
+  color:#6b5c4f;
+  max-width:500px;
+  margin:auto;
+  margin-bottom:30px;
+  line-height:1.6;
+}
+
+/* NOMBRE */
+
+.nombre-xv{
+  font-family:'Great Vibes', cursive;
+  font-size:4rem;
+  color:#7b2c3b;
+  margin-bottom:30px;
+}
+
+/* DECORACION */
+
+.decoracion{
+  width:120px;
+  height:2px;
+  background:#c7b9a8;
+  margin:auto;
+  opacity:.6;
+}
+
+/* LISTON */
+
+.footer-creditos{
+
+  background:#7b2c3b;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+
+  padding:14px 10px;
+  font-size:14px;
+}
+
+/* LINK SITIO */
+
+.link-sitio{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.link-sitio:visited{
+  color:white;
+}
+
+.link-sitio:hover{
+  opacity:.85;
+}
+
+/* WHATSAPP */
+
+.link-whatsapp{
+  color:white;
+  font-size:20px;
+  display:flex;
+  align-items:center;
+  transition:.3s;
+}
+
+.link-whatsapp:hover{
+  transform:scale(1.15);
+}

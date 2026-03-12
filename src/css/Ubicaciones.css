@@ -3,7 +3,7 @@
   background-image:url("../assets/images/fernanda.jpg");
   background-size:cover;
   background-position:center;
-  padding:140px 20px;
+  padding:120px 20px;
   /* parallax */
   background-attachment:fixed;
 }
@@ -42,7 +42,7 @@
 .ubicaciones-title{
   grid-column:1 / -1;
   font-family:'Great Vibes', cursive;
-  font-size:3rem;
+  font-size:4rem;
   color:#c9a75c;
 }
 

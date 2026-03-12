@@ -1,0 +1,176 @@
+.musica-container{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  z-index:999;
+}
+
+/* BOTON */
+
+.btn-musica{
+
+  position:relative;
+
+  width:55px;
+  height:55px;
+
+  border-radius:50%;
+  border:none;
+
+  background:#7b2c3b;
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:18px;
+
+  cursor:pointer;
+
+  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+
+  transition:.3s;
+}
+
+.btn-musica:hover{
+  transform:scale(1.1);
+}
+
+/* ICONO */
+
+.icono-musica{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* GIRAR ICONO CUANDO SUENA */
+
+.btn-musica.sonando .icono-musica{
+  animation:girarMusica 6s linear infinite;
+}
+
+@keyframes girarMusica{
+
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+
+}
+
+/* ONDAS DE SONIDO */
+
+.btn-musica.sonando::before,
+.btn-musica.sonando::after{
+
+  content:"";
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  border-radius:50%;
+
+  border:2px solid rgba(255,255,255,0.5);
+
+  animation:ondasMusica 2.5s infinite;
+}
+
+.btn-musica.sonando::after{
+  animation-delay:1.2s;
+}
+
+@keyframes ondasMusica{
+
+  0%{
+    transform:scale(1);
+    opacity:0.7;
+  }
+
+  70%{
+    transform:scale(2.2);
+    opacity:0;
+  }
+
+  100%{
+    opacity:0;
+  }
+
+}
+
+/* AVISO DE MUSICA */
+
+.aviso-musica{
+
+  position:fixed;
+
+  bottom:35px;
+  right:95px;
+
+  background:#7b2c3b;
+  color:white;
+
+  padding:10px 16px;
+
+  border-radius:30px;
+
+  font-size:14px;
+
+  backdrop-filter:blur(6px);
+
+  animation:fadeAviso 2.5s ease forwards;
+
+  z-index:999;
+
+  white-space:nowrap;
+
+}
+
+/* flechita hacia el botón */
+
+.aviso-musica::after{
+
+  content:"";
+  position:absolute;
+
+  right:-6px;
+  top:50%;
+
+  transform:translateY(-50%) rotate(45deg);
+
+  width:10px;
+  height:10px;
+
+  background:#7b2c3b;
+
+}
+
+/* animación mejorada */
+
+@keyframes fadeAviso{
+
+  0%{
+    opacity:0;
+    transform:translateY(8px);
+  }
+
+  15%{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  75%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    transform:translateY(6px);
+  }
+
+}

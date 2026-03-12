@@ -1,0 +1,105 @@
+.galeria{
+  padding:90px 20px;
+  text-align:center;
+
+  background:
+    linear-gradient(
+      rgba(244,239,233,0.85),
+      rgba(244,239,233,0.85)
+    ),
+    url("../assets/images/floral-paper.png");
+
+  background-size:cover;
+}
+
+.titulo-galeria{
+  font-family: 'Great Vibes', cursive;
+  font-size:4rem;
+  color: #c9a75c;
+  margin-bottom:2.5rem;
+}
+
+/* layout */
+
+.galeria-layout{
+  max-width:720px;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 420px 100px;
+  gap:20px;
+  justify-content:center;
+  align-items:start;
+}
+
+/* imagen principal */
+
+.imagen-principal{
+  width:420px;
+  height:640px;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 35px rgba(0,0,0,0.15);
+}
+
+.imagen-principal img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* miniaturas */
+
+.miniaturas{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.mini{
+  width:100%;
+  height:95px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  opacity:.6;
+  transition:all .3s ease;
+}
+
+.mini:hover{
+  opacity:1;
+  transform:scale(1.05);
+}
+
+.mini.activa{
+  opacity:1;
+  border:2px solid #c7b9a8;
+  transform:scale(1.05);
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.galeria-layout{
+  grid-template-columns:1fr;
+  max-width:420px;
+}
+
+.imagen-principal{
+  width:100%;
+  height:500px;
+}
+
+.miniaturas{
+  flex-direction:row;
+  overflow-x:auto;
+  gap:12px;
+  padding-top:10px;
+}
+
+.mini{
+  min-width:90px;
+  height:90px;
+}
+
+}

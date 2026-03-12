@@ -1,0 +1,214 @@
+.rsvp{
+  background: linear-gradient(
+    to bottom,
+    #f4efe9 0%,
+    #f1d9df 40%,
+    #e7b2bf 100%
+  );
+  padding:110px 20px;
+  text-align:center;
+}
+
+/* TITULO */
+
+.titulo-rsvp{
+  font-family:'Great Vibes', cursive;
+  font-size:4rem;
+  color:#c9a75c;;
+  margin-bottom:20px;
+}
+
+/* TEXTO */
+
+.texto-rsvp{
+  max-width:520px;
+  margin:auto;
+  margin-bottom:60px;
+  color:#7a6a5d;
+  line-height:1.7;
+  font-size:18px;
+}
+
+/* CONTENEDOR CENTRAL */
+
+.confirmacion{
+  max-width:600px;
+  margin:auto;
+  margin-top:40px;
+  text-align:center;
+  animation:fadeIn .5s ease;
+}
+
+/* MENSAJES */
+
+.mensaje{
+  margin-bottom:40px;
+  color:#6b5c4f;
+  font-size:18px;
+  max-width:520px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mensaje-gracias{
+  max-width:520px;
+  margin:auto;
+  margin-bottom:35px;
+  font-size:18px;
+  color:#6b5c4f;
+  line-height:1.6;
+}
+
+/* BOTONES CONTENEDOR */
+
+.botones-rsvp{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+/* BOTON BASE */
+
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  padding:15px 28px;
+
+  border-radius:40px;
+  border:none;
+
+  font-weight:600;
+  font-size:15px;
+
+  cursor:pointer;
+  text-decoration:none;
+
+  transition:all .25s ease;
+
+  backdrop-filter:blur(4px);
+}
+
+/* ICONOS */
+
+.icono{
+  font-size:17px;
+}
+
+/* ASISTIR */
+
+.asistir{
+  background:#7b2c3b;
+  color:white;
+  box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+.asistir:hover{
+  background:#64232f;
+  transform:translateY(-2px);
+}
+
+/* NO ASISTIR */
+
+.no-asistir{
+  background:#e5ded6;
+  color:#6b5c4f;
+}
+
+.no-asistir:hover{
+  background:#d8cec4;
+  transform:translateY(-2px);
+}
+
+/* GOOGLE FORMS */
+
+.forms{
+  background:#6b5c4f;
+  color:white;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.forms:hover{
+  background:#56483f;
+  transform:translateY(-2px);
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  background:#25D366;
+  color:white;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.whatsapp:hover{
+  background:#1ebe5d;
+  transform:translateY(-2px);
+}
+
+/* BOTON VOLVER */
+
+.volver{
+  margin-top:30px;
+
+  background:#f2ece6;
+  color:#6b5c4f;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  margin-left:auto;
+  margin-right:auto;
+
+  width:fit-content;
+
+  box-shadow:0 6px 16px rgba(0,0,0,0.12);
+}
+
+.volver:hover{
+  background:#e3dbd3;
+  transform:translateY(-2px);
+}
+
+/* ANIMACION */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.titulo-rsvp{
+  font-size:36px;
+}
+
+.texto-rsvp{
+  font-size:16px;
+}
+
+.botones-rsvp{
+  flex-direction:column;
+}
+
+.btn{
+  width:100%;
+  max-width:300px;
+  margin-bottom: 0.5rem;
+}
+
+}

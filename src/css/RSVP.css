@@ -203,12 +203,18 @@
 
 .botones-rsvp{
   flex-direction:column;
+  align-items:center;
 }
 
 .btn{
   width:100%;
   max-width:300px;
   margin-bottom: 0.5rem;
+}
+
+.whatsapp{
+  margin-left:auto;
+  margin-right:auto;
 }
 
 }
